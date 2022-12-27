@@ -671,21 +671,32 @@ const ActivityInner = ({
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant="h6">დაფინანსების წყარო</Typography>
-                        <Typography variant="body2">
-                            სულ დაფინანსება :  {data[c.total_funding]
-                                ? data[c.total_funding]
-                                : "არ არის მითითებული"}
-                        </Typography>
-                        <Typography variant="body2">
-                            გრანტი :  {data[c.grant_funding]
-                                ? data[c.grant_funding]
-                                : "არ არის მითითებული"}
-                        </Typography>
-                        <Typography variant="body2">
-                            სხვა :  {data[c.other_funding]
-                                ? data[c.other_funding]
-                                : "არ არის მითითებული"}
-                        </Typography>
+                        {
+                        !data[c.total_funding] && !data[c.grant_funding] && !data[c.other_funding]  ?
+                        (                            
+                            <Typography variant="body2">
+                               არ არის მითითებული
+                            </Typography>
+                        ) : (
+                            <>
+                                <Typography variant="body2">
+                                აქტივობის სრული ბიუჯეტი :  {data[c.total_funding]
+                                        ? data[c.total_funding]
+                                        : "არ არის მითითებული"}
+                                </Typography>
+                                <Typography variant="body2">
+                                    ცენტრის სახსრები :  {data[c.grant_funding]
+                                        ? data[c.grant_funding]
+                                        : "არ არის მითითებული"}
+                                </Typography>
+                                <Typography variant="body2">
+                                    დონორი :  {data[c.other_funding]
+                                        ? data[c.other_funding]
+                                        : "არ არის მითითებული"}
+                                </Typography>    
+                            </>
+                        )     
+                        }              
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant="h6">

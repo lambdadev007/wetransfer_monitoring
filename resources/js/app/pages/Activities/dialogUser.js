@@ -327,7 +327,7 @@ const DialogContentUser = ({
                             multiline
                             rows={1}
                             fullWidth
-                            label="სულ დაფინანსება"
+                            label="აქტივობის სრული ბიუჯეტი"
                             margin="normal"
                             variant="outlined"
                             onChange={e =>
@@ -346,7 +346,7 @@ const DialogContentUser = ({
                             multiline
                             rows={1}
                             fullWidth
-                            label="გრანტი"
+                            label="ცენტრის ბიუჯეტი"
                             margin="normal"
                             variant="outlined"
                             onChange={e =>
@@ -365,7 +365,7 @@ const DialogContentUser = ({
                             multiline
                             rows={1}
                             fullWidth
-                            label="სხვა"
+                            label="დონორი"
                             margin="normal"
                             variant="outlined"
                             onChange={e =>
