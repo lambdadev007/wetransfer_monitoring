@@ -327,7 +327,7 @@ const DialogContentUser = ({
                             multiline
                             rows={1}
                             fullWidth
-                            label="მთლიანი დაფინანსება"
+                            label="სულ დაფინანსება"
                             margin="normal"
                             variant="outlined"
                             onChange={e =>

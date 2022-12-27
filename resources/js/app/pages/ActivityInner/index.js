@@ -672,7 +672,7 @@ const ActivityInner = ({
                     <Grid item xs={12}>
                         <Typography variant="h6">დაფინანსების წყარო</Typography>
                         <Typography variant="body2">
-                            სულ :  {data[c.total_funding]
+                            სულ დაფინანსება :  {data[c.total_funding]
                                 ? data[c.total_funding]
                                 : "არ არის მითითებული"}
                         </Typography>
